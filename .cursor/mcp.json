@@ -1,0 +1,55 @@
+{
+  "mcpServers": {
+    "supabase": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@supabase/mcp-server-supabase@latest",
+        "--access-token",
+        "sbp_6f9870c471152343d22799a190b293c5b699ae30"
+      ]
+    },
+    "Github": {
+      "type": "http",
+      "url": "https://server.smithery.ai/@smithery-ai/github/mcp?api_key=0663ecec-1656-4c56-a138-4ad07db14101&profile=awkward-puma-VIy4uu",
+      "headers": {}
+    },
+    "sequential-thinking": {
+      "command": "cmd",
+      "args": [
+        "/c",
+        "npx",
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ],
+      "env": {
+        "NODE_ENV": "development"
+      }
+    },
+    "brave-search": {
+      "command": "cmd",
+      "args": [
+        "/c",
+        "npx",
+        "-y",
+        "@modelcontextprotocol/server-brave-search"
+      ],
+      "env": {
+        "NODE_ENV": "development",
+        "BRAVE_API_KEY": "BSA-xMPDORtwhd5W6J4UJrPWLtkJLJ0"
+      }
+    },
+    "puppeteer": {
+      "command": "cmd",
+      "args": [
+        "/c",
+        "npx",
+        "-y",
+        "@modelcontextprotocol/server-puppeteer"
+      ],
+      "env": {
+        "NODE_ENV": "development"
+      }
+    }
+  }
+}
